@@ -1,38 +1,38 @@
 # PostcodeApp
 A Java program that allows a user to query and show details for a given UK postcode.
 
-#PostCode Application:
+PostCode Application:
 
-##The project containing the following classes:
-    Postcode.java -
-    This class represents postcode object and has a get method
-    and a method that converts the postcode to be without space character.
+The project containing the following classes:
+Postcode.java -
+This class represents postcode object and has a get method
+and a method that converts the postcode to be without space character.
 
-    ###### Validation.java -
+Validation.java -
     This class represents validation of the input of the postcode application, it has a method isValidPostcode
     that receives a Postcode object and ck if the postcode is a valid uk postcode.
-
-    ###### GetRequestHandler.java -
+    
+ GetRequestHandler.java -
     This class represent the get request to the "postcode.io" REST API.
     It receives the postcode object and the name of the request we want to send to the REST API.
     It creates a appropriate urls to send in the request.
     Its main method is sendGetRequest.
     It's main method is sendGetRequest method.
 
-    ###### ResultHandler.java -
+ResultHandler.java -
     This class represent the data that we get back from the get request that we send with the GetRequestHandler,
     I represent the data in JASON object.
     ResultHandler receives the output from the GetRequestHandler that called to the get request.
     The ResultHandler has print method that prints the data by the request we send.
 
-    ###### PostCodeApp.java -
+PostCodeApp.java -
     This class is responsible for the whole flow of the application it receives the postcode and the requestName and it holds the
     GetRequestHandler and ResultHandler Objects and calls to the relevant methods in them.
     Its main method is runApp();
 
-##The project containing also a test folder with unit tests:
+The project containing also a test folder with unit tests:
 
-    GetRequestHandlerTest.java - test GetRequestHandler class.
-    PostcodeTest.java - test Postcode class.
-    ResultHandlerTest.java - test ResultHandler class.
-    ValidationTest.java - test Validation class.
+   GetRequestHandlerTest.java - test GetRequestHandler class.
+   PostcodeTest.java - test Postcode class.
+   ResultHandlerTest.java - test ResultHandler class.
+   ValidationTest.java - test Validation class.
