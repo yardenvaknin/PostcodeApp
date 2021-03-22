@@ -1,9 +1,9 @@
 # PostcodeApp
-A Java program that allows a user to query and show details for a given UK postcode.
+A Java program that allows a user to query and show details for a given UK postcode.<br />
 Using the free REST API :  http://postcodes.io
 
 ## Postcode.java -
-This class represents postcode object and has a get method
+This class represents postcode object and has a get method 
 and a method that converts the postcode to be without space character.
 
 ## Validation.java -
